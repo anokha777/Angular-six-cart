@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-six-cart';
+  loadedFeatures = 'recipe';
+  onNavigate(features: string) {
+    this.loadedFeatures = features;
+  }
 }
